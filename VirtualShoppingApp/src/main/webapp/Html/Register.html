@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>register page</title>
+	<link rel="Stylesheet" type="text/css" href="../Css/Register.css">
+	 <script type="text/javascript"  src="../Js/Register.js" async="true"></script>
+</head>
+<body>
+
+	<div class="reg_user">
+		<div class="form_box">
+			
+			<div id="User_reg" class="input_group">
+			
+				<input type="text" class="input_field" placeholder="User Id" onchange="Register.NewUserChanged()" required="required">
+				<p id="namecheck"></p>
+				<input type="password" class="input_field" placeholder="Enter Password" onchange="" required="required">
+				<p id="pass"></p>
+				<input type="password" class="input_field" placeholder="Re-enter Password" onchange="Register.NewRePassword()" required>
+				<p id="passwordcheck"></p>	
+				<input type="CheckBox" class="Check_box"  required><span id="spn3"> I agree to terms and conditions</span>
+				<button type="submit" class="submit_btn" onclick="Register.gotoIndex()">Register and Login</button>
+			
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

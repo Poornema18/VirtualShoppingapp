@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Proceed to bill</title>
+ <link rel="Stylesheet"  type="text/css" href="../Css/Checkout.css">
+ <script type="module" src="../Js/Checkout.js" async="true"></script>
+</head>
+<body>
+ <div class="header">
+    <div class="innerheader">
+        <ul class="navigation">
+         <li>Hii   <span id="HdrName">  </span></li>
+        <li class="wallet"> Balance in your wallet : <span id="wallet"> </span> </li>
+        <li ><button onclick="Checkout.updateMyWallet()">update wallet</button></li>
+        <li><button onclick="Checkout.logout()" class="logOut">Logout</button></li>
+        </ul>
+    </div>    
+ </div>
+ <div class="form_box">
+   <div class="product"> 
+   <div>
+   <h2 class="user">Hello!</h2>
+   <h2>YOUR ORDER!</h2></div>
+    <table  class="table">   
+     <tr>
+     <th>  TITLE </th>
+     <th>  PRICE</th>
+     <th>   QUANTITY</th></tr>
+      
+    </table>
+   </div>
+   <div class="total" > 
+     <p  >
+      <span >TOTAL</span>             
+      <span class="tprice">98</span>
+      </p>
+       <div class="order">
+       <button onclick="Checkout.orderPlaced()">Place Order</button>
+       
+   </div><p id="result"></p>
+   <a href="ViewProducts.html"> click here to continue shopping</a>
+   </div>
+  
+ </div>
+</body>
+</html>

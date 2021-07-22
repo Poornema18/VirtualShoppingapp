@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>welcome user</title>
+    <link rel="stylesheet" type="text/css" href="../Css/ViewProducts.css">
+        <script type="module" src="../Js/ViewProducts.js" async="true"></script>
+</head>
+<body>
+<div class="header">
+    <div class="innerheader">
+        <ul class="navigation">
+        <li >Hii  <span id="HdrName">  </span></li>
+        <li class="wallet"> Balance in your wallet : <span id="wallet"> </span> </li>
+        <li ><button onclick="ViewProducts.updateMyWallet()">update wallet</button></li>
+        <li><button  class="logOut" onclick="ViewProducts.logout()">Logout</button></li>
+        </ul>
+    </div>    
+</div>
+     <div class="container">
+    	<h1>Available products for Shopping</h1>
+    	<div class="viewItem">
+    	   <div class="AllProducts">
+    	     
+    		 </div>
+           <div class="Cart" >
+           <div class="cart_header">
+           <span >ITEM</span><span >PRICE</span><span >QUANTITY</span>
+           </div>
+              <div class="AllProducts">              
+    
+              </div>
+               <p class="total" >
+                  <span >TOTAL</span>             
+                  <span class="tprice"></span>
+                  <span class="tqty"  ></span>              
+               </p>
+    		<a onclick="ViewProducts.GotoCheckout()" id="gotocart">Go to Checkout</a>
+    	   </div>
+        </div>     
+    </div>
+</body>
+</html>

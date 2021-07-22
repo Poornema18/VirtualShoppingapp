@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>welcome admin</title>
+    <link rel="stylesheet" type="text/css" href="../Css/ProductDetail.css">
+    <script type="module" src="../Js/ProductDetail.js" async="true"></script>
+</head>
+<body>
+<div class="header">
+    <div class="innerheader">
+        <ul class="navigation">
+         <li >Hii  <span id="HdrName">  </span></li>
+         <li><button onclick="ProductDetails.logout()" class="logOut">Logout</button></li>
+        </ul>
+    </div>    
+</div>
+  <div class="container">
+   	<h1>Available products</h1>
+   	 <button class="add" onclick="getElementById('inputform').style.display='block'">Add new product</button>
+     <div class="viewItem">
+       <div class="AllProducts">
+    	 <div class="input_form" id="inputform">
+    	    <label for="Name">Enter Product name</label>
+    	    <input type="text" id="Name" placeholder="product name"></br>
+    	    <label for="Price">Enter Product Price</label>
+    	    <input type="number" id="Price" placeholder="1"></br>
+    	    <label for="Qty">Available Quantity</label>
+    	    <input type="number" id="Qty" placeholder="1"></br>
+    	    <button  onclick="ProductDetails.formSubmit()" >Submit</button>
+    	  </div>
+   	   </div>
+   	   <div class="order_details">
+  	 <table  class="table">   
+     <tr>
+       <th>Name </th>
+       <th>Price</th>
+       <th>Quantity</th>
+       <th>Order Id</th>
+      </tr>
+    
+    </table>
+  	 
+  	 </div>		
+  	 </div> 
+  	 
+   </div>
+
+</body>
+</html>

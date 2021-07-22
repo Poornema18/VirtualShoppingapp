@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <meta charset="ISO-8859-1">
+      <title>Virtual Shopping App</title>
+      <link rel="Stylesheet"  type="text/css" href="Css/index.css">
+      <script  src="Js/index.js" async="true"></script>
+ </head>
+ <body>
+ 
+ <div class="admin_user">
+		<div class="form_box">
+			<div class="button_box">
+				<div id="top_btn"> </div>
+				<button type="button" class="toggle_btn" onclick="index.admin();getElementById('top_btn').style.left='0px';">Admin</button>
+				<button type="button" class="toggle_btn" onclick="index.user();getElementById('top_btn').style.left='110px'">User</button>	
+			</div>
+			<div id="admin" class="input_group" style="display:block">
+				<input type="text" class="input_field" placeholder="Admin Id" id="admin_Id" required="true">
+				<input type="text" class="input_field" placeholder="Enter Password" id="admin_password" >
+<!-- 				<input type="CheckBox" class="Check_box" ><span id="spn">  Remember Password</span> -->
+				<button type="submit" class="submit_btn" id="adminBtn" onclick="index.Login(event,'admin')">Login</button>
+			</div>
+
+			<div id="user" class="input_group" style="display:none">
+				<input type="text" class="input_field" placeholder="User Id" id="user_Id" >
+				<input type="text" class="input_field" placeholder="Enter Password" id="user_password">
+<!-- 				<input type="CheckBox" class="Check_box" ><span id="spn">Remember Password </span> -->
+				<button type="submit" class="submit_btn" id="userBtn" onclick="index.Login(event,'user')" >Login</button>
+			</div>
+			<div id="text"></div>
+			<div id="reg" class="input_group"  >
+			<p id="spn1" >Not Registered yet?
+				<button  class="reg_btn" onclick="index.RegisterClicked()"  id="reg_btn">Register</button></p>
+		    </div>
+		 </div>
+	</div>
+	
+<!--       <script src="Js/index.js"></script> -->
+ </body>
+</html>

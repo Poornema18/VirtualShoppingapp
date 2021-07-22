@@ -1,0 +1,141 @@
+@charset "ISO-8859-1";
+*{
+	font-family: 'comfortaa',cursive;
+	margin: 2px;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header{
+	width:100%;
+	height:80px;
+	display:block;
+	background-color:#101010;
+}
+.innerheader{
+	width:1000px;
+	height:100%;
+	display:block;
+	margin:0 auto;
+}
+.navigation{
+	height:100%;
+	display:table;
+	padding: 0px 300px;
+}
+.navigation li{
+	display:table-cell;
+	vertical-align:middle;
+	height:100%;
+	color:white;
+	padding:0 20px;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: lavenderblush;
+	
+}
+.container > h1{
+	padding: 20px 0;
+}
+.viewItem{
+	display: flex;
+
+}
+.AllProducts{
+	flex: 0.50;
+}
+.Item{
+	display: flex;
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+	border: 1px solid silver;
+	margin-bottom: 10px;
+}
+
+.update{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	padding: 5px 25px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.Item:hover{
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	transform: scale(1.01);
+}
+.item_info{
+	padding: 10px;
+	width: 100%;
+	position: relative;
+}
+.item_name,.item_price{
+	margin-bottom: 2px;
+}
+
+.update:hover{
+	background-color: white;
+	color: green;
+	font-weight: 600;
+	border: 1px solid green;
+}
+.add{
+	
+	bottom: 10px;
+	right: 10px;
+	padding: 5px 25px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.add:hover{
+	background-color: white;
+	color: green;
+	font-weight: 600;
+	border: 1px solid green;
+}
+.input_form label{
+	
+	padding: 10px;
+	width: 100%;
+	position: relative;
+}
+.input_form{
+/* 	display: flex; */
+	display:none;
+	width: 100%;
+	height: 130px;
+	overflow: hidden;
+	border: 1px solid silver;
+	margin-bottom: 10px;
+}
+.input_form:hover{
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	transform: scale(1.01);
+}
+.order_details{
+	flex: 0.50;
+	margin-left:10px;
+	padding: 10px;
+	height: absolete;
+	border: 1px solid silver;
+	border-radius: 5px;
+	
+}
+.table{
+	border :1px solid black;
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+}
+.table,th,td{
+	border :1px solid black;
+}

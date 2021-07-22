@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+@import url("C:\applications\fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web");
+*{
+	font-family: 'comfortaa',cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}.reg_user{
+	height: 100%;
+	width: 100%;
+	background-color: lavenderblush;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.form_box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	
+	padding: 50px;
+	overflow: hidden;
+}.input_group{
+	top: 100px;
+	position: absolute;
+	
+	width: 280px;
+	transition: .5s;
+}
+.input_field{
+	width: 100%;
+	padding: 1px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 50px;
+	border-bottom: 3px solid silver;
+	outline: none;
+	background: transparent;
+}
+.submit_btn{
+	width: 80%;
+	padding: 5px;
+	cursor: pointer;
+	display: block;
+	border-top:150px;
+	margin-top:30px ;
+	margin-left:20px;
+	background: linear-gradient(to right,#ff105f,#ffad06);
+	outline: none;
+	border-radius: 20px;
+}
+#spn3{
+	color: #777;
+	top:103px;
+	font-size: 12px;
+	bottom: 65px;
+	padding: 0px;
+}
